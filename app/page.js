@@ -20,9 +20,11 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center space-x-4">
-          <button className="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded transition duration-300">
-            Get Started
-          </button>
+          <a href="/admin">
+            <button className="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded transition duration-300">
+              Access Dashboard
+            </button>
+          </a>
           <button className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300">
             Learn More
           </button>
