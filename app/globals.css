@@ -15,7 +15,7 @@
 }
 
 body {
-  color: var(--foreground);
+  color: #0a0a0a;
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,4 +24,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::selection {
+  background-color: #cc4b4b;
+  color: white;
 }

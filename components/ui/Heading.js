@@ -1,8 +1,12 @@
-const Heading = ({ title, description }) => {
+import { cn } from '@/lib/utils';
+
+const Heading = ({ title, description, divClassName, headingClassName, paragraphClassName }) => {
   return (
-    <>
-      <h1 classNamme="text-3xl">{title}</h1>
-      <p className="text-xl">{description}</p>
-    </>
+    <div className={cn("w-[85%] mx-auto text-center", divClassName)}>
+      <h1 className={cn("text-3xl", headingClassName)}>{title}</h1>
+      <p className={cn("text-xl", paragraphClassName)}>{description}</p>
+    </div>
   );
 }
+
+export default Heading;
